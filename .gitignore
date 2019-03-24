@@ -1,0 +1,3 @@
+*.pyc
+bookshop/*.pyc
+.idea/
