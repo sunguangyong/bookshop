@@ -25,7 +25,7 @@ SECRET_KEY = '*qodzl*@x(o5cy*_kx0%oc2l%+55el*w#u@2oel##^a&i&yc@)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["172.16.10.29"]
+ALLOWED_HOSTS = ["172.16.10.72"]
 
 
 # Application definition
@@ -84,8 +84,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bookstore',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'debian-sys-maint',
+        'PASSWORD': "r6HuJmhKIBMxqZqJ",
         'HOST': '127.0.0.1',
         'PORT': 3306,
     }
