@@ -2,11 +2,22 @@
 from __future__ import unicode_literals
 from django.shortcuts import render, redirect, reverse
 from db.base_model import Passport
+from users.Base_Views import GeneralView, NoLoginView
+
+import json
 
 import re
 
 # Create your views here.
+class Test(NoLoginView):
 
+    def post(self,request):
+        data = {1:2,3:4}
+        return self.send_success(data)
+        self.send_response(data)
+
+    def get(self,request):
+        return json.dumps({5:6,7:8})
 
 def register(request):
     """显示用户注册页面"""
