@@ -1,0 +1,3479 @@
+[
+  {
+    "id": "main-gis",
+    "name": "GIS",
+    "desc": "控制所有GIS路由",
+    "authorization": "1",
+    "route": "/gis",
+    "type": "button",
+    "children": []
+  },
+  {
+    "id": "networkcompany",
+    "name": "单位档案",
+    "desc": "单位档案",
+    "authorization": "1",
+    "route": "/company",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "networkcompany-company-list",
+        "name": "单位--单位列表",
+        "desc": "单位--单位档案",
+        "authorization": "1",
+        "route": "",
+        "type": "company-list",
+        "children": []
+      },
+      {
+        "id": "networkcompany-company-info",
+        "name": "单位信息",
+        "desc": "单位信息",
+        "authorization": "1",
+        "route": "/company/company",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-company-info-mapscale",
+            "name": "地图放大",
+            "desc": "地图放大",
+            "authorization": "1",
+            "route": "/company/companyMap",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-company-info-edit",
+            "name": "编辑",
+            "desc": "编辑",
+            "authorization": "0",
+            "route": "/company/company/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-company-info-gorelated",
+            "name": "去关联",
+            "desc": "没有绑定联网单位时去关联",
+            "authorization": "0",
+            "route": "/thirdsystem/company",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-building-info",
+        "name": "建筑信息",
+        "desc": "建筑信息",
+        "authorization": "1",
+        "route": "/company/building",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-building-info-gonewbuild",
+            "name": "去新建",
+            "desc": "没有建筑物时去新建",
+            "authorization": "0",
+            "route": "/company/building/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-building-info-del",
+            "name": "删除建筑",
+            "desc": "删除建筑",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-building-info-new",
+            "name": "新增建筑",
+            "desc": "新增建筑",
+            "authorization": "0",
+            "route": "/company/building/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-building-info-edit",
+            "name": "编辑建筑",
+            "desc": "编辑建筑",
+            "authorization": "0",
+            "route": "/company/building/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-company-building-floormanage",
+            "name": "楼层管理",
+            "desc": "楼层管理",
+            "authorization": "1",
+            "route": "/company/buildingfloor/edit",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-company-building-floormanage-add",
+                "name": "新增",
+                "desc": "新增",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-company-building-floormanage-table-edit",
+                "name": "编辑",
+                "desc": "编辑",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-company-building-floormanage-table-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-system-info",
+        "name": "消防设施系统",
+        "desc": "消防设施系统",
+        "authorization": "1",
+        "route": "/company/firesystem",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-system-info-gonewsystem",
+            "name": "去新建",
+            "desc": "没有系统时去新建",
+            "authorization": "0",
+            "route": "/company/firesystem/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-system-info-gonewbuild",
+            "name": "去新建",
+            "desc": "没有建筑物时去新建",
+            "authorization": "0",
+            "route": "/company/building/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-system-info-del",
+            "name": "编辑删除系统",
+            "desc": "编辑删除系统",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-system-info-new",
+            "name": "新增系统",
+            "desc": "新增系统",
+            "authorization": "0",
+            "route": "/company/firesystem/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-system-info-edit",
+            "name": "编辑系统",
+            "desc": "编辑系统",
+            "authorization": "0",
+            "route": "/company/firesystem/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-system-info-devicelist",
+            "name": "设备列表",
+            "desc": "设备列表-物联网设备",
+            "authorization": "1",
+            "route": "/company/device/device_independent_list",
+            "type": "button",
+            "jpath": "device-info",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-component-img",
+        "name": "消防设施部件图",
+        "desc": "消防设施部件图",
+        "authorization": "1",
+        "route": "/company/component",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-component-img-devicelist",
+            "name": "设备列表",
+            "desc": "设备列表",
+            "authorization": "1",
+            "route": "/company/device/device_independent_list",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-devicefilter",
+            "name": "设备筛选",
+            "desc": "设备筛选",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-relatedlocation",
+            "name": "关联位置",
+            "desc": "关联位置",
+            "authorization": "0",
+            "route": "/company/component/about",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-del",
+            "name": "删除部件图",
+            "desc": "删除部件图",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-replace",
+            "name": "替换部件图",
+            "desc": "替换部件图",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-new",
+            "name": "上传部件图",
+            "desc": "上传部件图",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-pre",
+            "name": "上一张",
+            "desc": "上一张",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-next",
+            "name": "下一张",
+            "desc": "下一张",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-component-img-upload",
+            "name": "上传平面图",
+            "desc": "上传平面图",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-device-info",
+        "name": "物联网设备",
+        "desc": "物联网设备",
+        "authorization": "1",
+        "route": "/company/device",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-device-info-alonedevice",
+            "name": "独立式设备",
+            "desc": "独立式设备",
+            "authorization": "1",
+            "route": "/company/device/device_independent_list",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-device-info-alonedevice-new",
+                "name": "新增",
+                "desc": "新增",
+                "authorization": "0",
+                "route": "/company/device/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alonedevice-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alonedevice-relatedlocation",
+                "name": "关联位置",
+                "desc": "关联位置",
+                "authorization": "0",
+                "route": "/company/component/about",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alonedevice-importAll",
+                "name": "批量导入",
+                "desc": "批量导入",
+                "authorization": "0",
+                "route": "/company/component/import",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alonedevice-table-detail",
+                "name": "详情",
+                "desc": "表格操作-详情",
+                "authorization": "1",
+                "route": "/company/device/info",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-device-info-alonedevice-table-detail-del",
+                    "name": "删除",
+                    "desc": "表格详情里的删除",
+                    "authorization": "0",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "networkcompany-device-info-alonedevice-table-detail-relatedlocation",
+                    "name": "关联位置",
+                    "desc": "表格详情里的关联位置",
+                    "authorization": "0",
+                    "route": "/company/component/about",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "networkcompany-device-info-alonedevice-table-edit",
+                "name": "编辑",
+                "desc": "表格操作-编辑",
+                "authorization": "0",
+                "route": "/company/device/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alonedevice-table-del",
+                "name": "删除",
+                "desc": "表格操作-删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-device-info-dtu",
+            "name": "传输设备",
+            "desc": "传输设备",
+            "authorization": "1",
+            "route": "/company/device/device_dtu_list",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-device-info-dtu-new",
+                "name": "新增",
+                "desc": "新增",
+                "authorization": "0",
+                "route": "/company/device/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-dtu-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-dtu-relatedlocation",
+                "name": "关联位置",
+                "desc": "关联位置",
+                "authorization": "0",
+                "route": "/company/component/about",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-dtu-importAll",
+                "name": "批量导入",
+                "desc": "批量导入",
+                "authorization": "0",
+                "route": "/company/component/import",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-dtu-table-detail",
+                "name": "详情",
+                "desc": "表格操作-详情",
+                "authorization": "1",
+                "route": "/company/device/info",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-device-info-dtu-table-detail-del",
+                    "name": "删除",
+                    "desc": "表格详情里的删除",
+                    "authorization": "0",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "networkcompany-device-info-dtu-table-detail-relatedlocation",
+                    "name": "关联位置",
+                    "desc": "表格详情里的关联位置",
+                    "authorization": "0",
+                    "route": "/company/component/about",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "networkcompany-device-info-dtu-table-edit",
+                "name": "编辑",
+                "desc": "表格操作-编辑",
+                "authorization": "0",
+                "route": "/company/device/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-dtu-table-del",
+                "name": "删除",
+                "desc": "表格操作-删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-device-info-component",
+            "name": "部件",
+            "desc": "部件",
+            "authorization": "1",
+            "route": "/company/device/component_list",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-device-info-component-new",
+                "name": "新增",
+                "desc": "新增",
+                "authorization": "0",
+                "route": "/company/device/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-component-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-component-relatedlocation",
+                "name": "关联位置",
+                "desc": "关联位置",
+                "authorization": "0",
+                "route": "/company/component/about",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-component-importAll",
+                "name": "批量导入",
+                "desc": "批量导入",
+                "authorization": "0",
+                "route": "/company/component/import",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-component-table-detail",
+                "name": "详情",
+                "desc": "表格操作-详情",
+                "authorization": "1",
+                "route": "/company/component/info",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-device-info-component-table-detail-del",
+                    "name": "删除",
+                    "desc": "表格详情里的删除",
+                    "authorization": "0",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "networkcompany-device-info-component-table-detail-relatedlocation",
+                    "name": "关联位置",
+                    "desc": "表格详情里的关联位置",
+                    "authorization": "0",
+                    "route": "/company/component/about",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "networkcompany-device-info-component-table-edit",
+                "name": "编辑",
+                "desc": "表格操作-编辑",
+                "authorization": "0",
+                "route": "/company/component/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-component-table-del",
+                "name": "删除",
+                "desc": "表格操作-删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-device-info-alarm",
+            "name": "报警主机",
+            "desc": "报警主机",
+            "authorization": "1",
+            "route": "/company/device/device_alarm_list",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-device-info-alarm-new",
+                "name": "新增",
+                "desc": "新增",
+                "authorization": "0",
+                "route": "/company/device/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alarm-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alarm-relatedlocation",
+                "name": "关联位置",
+                "desc": "关联位置",
+                "authorization": "0",
+                "route": "/company/component/about",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alarm-importAll",
+                "name": "批量导入",
+                "desc": "批量导入",
+                "authorization": "0",
+                "route": "/company/component/import",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alarm-table-detail",
+                "name": "详情",
+                "desc": "表格操作-详情",
+                "authorization": "1",
+                "route": "/company/device/info",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-device-info-alarm-table-detail-del",
+                    "name": "删除",
+                    "desc": "表格详情里的删除",
+                    "authorization": "0",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "networkcompany-device-info-alarm-table-detail-relatedlocation",
+                    "name": "关联位置",
+                    "desc": "表格详情里的关联位置",
+                    "authorization": "0",
+                    "route": "/company/component/about",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "networkcompany-device-info-alarm-table-edit",
+                "name": "编辑",
+                "desc": "表格操作-编辑",
+                "authorization": "0",
+                "route": "/company/device/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-device-info-alarm-table-del",
+                "name": "删除",
+                "desc": "表格操作-删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-alarm-history",
+        "name": "告警历史",
+        "desc": "告警历史",
+        "authorization": "1",
+        "route": "/company/historyalarm",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-alarm-history-deal",
+            "name": "处理",
+            "desc": "表格头部处理",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-alarm-history-table-record",
+            "name": "维修记录",
+            "desc": "维修记录",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-alarm-history-table-GIS",
+            "name": "GIS",
+            "desc": "GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-alarm-history-table-deal",
+            "name": "处理",
+            "desc": "处理",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-alarm-history-table-notice",
+            "name": "通知",
+            "desc": "通知",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-alarm-history-alarm",
+            "name": "火警",
+            "desc": "火警",
+            "authorization": "1",
+            "route": "/company/historyalarm",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-alarm-history-alarm-table-detail",
+                "name": "详情",
+                "desc": "详情",
+                "authorization": "1",
+                "route": "/company/historyalarm/fire_info",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-alarm-history-alarm-table-detail-history",
+                    "name": "历史记录",
+                    "desc": "告警历史中详情的历史记录",
+                    "authorization": "1",
+                    "route": "/alarmdeal/detailsinfo/componenthistory",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "networkcompany-alarm-history-alarm-table-detail-gis",
+                    "name": "GIS",
+                    "desc": "告警历史中详情的GIS",
+                    "authorization": "1",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-alarm-history-fault",
+            "name": "故障",
+            "desc": "故障",
+            "authorization": "1",
+            "route": "/company/historyalarm",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-alarm-history-fault-table-detail",
+                "name": "详情",
+                "desc": "详情",
+                "authorization": "1",
+                "route": "/company/historyalarm/fault_info",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-alarm-history-fault-table-detail-history",
+                    "name": "历史记录",
+                    "desc": "告警历史中详情的历史记录",
+                    "authorization": "1",
+                    "route": "/alarmdeal/detailsinfo/componenthistory",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "networkcompany-alarm-history-fault-table-detail-gis",
+                    "name": "GIS",
+                    "desc": "告警历史中详情的GIS",
+                    "authorization": "1",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-alarm-history-abnormal",
+            "name": "异常",
+            "desc": "异常",
+            "authorization": "1",
+            "route": "/company/historyalarm",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-alarm-history-abnormal-table-detail",
+                "name": "详情",
+                "desc": "详情",
+                "authorization": "1",
+                "route": "/company/historyalarm/abnormal_info",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-alarm-history-abnormal-table-detail-history",
+                    "name": "历史记录",
+                    "desc": "告警历史中详情的历史记录",
+                    "authorization": "1",
+                    "route": "/alarmdeal/detailsinfo/componenthistory",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "networkcompany-alarm-history-abnormal-table-detail-gis",
+                    "name": "GIS",
+                    "desc": "告警历史中详情的GIS",
+                    "authorization": "1",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-alarm-history-yinhuan",
+            "name": "隐患",
+            "desc": "隐患",
+            "authorization": "1",
+            "route": "/company/historyalarm",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-alarm-history-yinhuan-GIS",
+                "name": "GIS",
+                "desc": "表格头部GIS",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-alarm-history-yinhuan-del",
+                "name": "删除",
+                "desc": "表格头部删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-alarm-history-yinhuan-set",
+                "name": "设置",
+                "desc": "表格头部设置图标",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-alarm-history-yinhuan-table-detail",
+                "name": "详情",
+                "desc": "详情",
+                "authorization": "1",
+                "route": "/company/historyalarm/hidden_info",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-alarm-history-yinhuan-table-GIS",
+                "name": "GIS",
+                "desc": "GIS",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-alarm-history-yinhuan-table-del",
+                "name": "删除",
+                "desc": "删除图标",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-video-info",
+        "name": "视频监控",
+        "desc": "视频监控",
+        "authorization": "1",
+        "route": "/company/video",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-video-info-new",
+            "name": "添加摄像头",
+            "desc": "如果没有摄像头，添加摄像头",
+            "authorization": "0",
+            "route": "/company/video/newAdd",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-video-info-videolist",
+            "name": "视频列表",
+            "desc": "视频列表",
+            "authorization": "1",
+            "route": "/company/video/videoList",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-video-info-videolist-new",
+                "name": "新建",
+                "desc": "表格头部新建摄像头",
+                "authorization": "0",
+                "route": "/company/video/newAdd",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-video-info-videolist-table-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-video-info-videolist-table-set",
+                "name": "设置",
+                "desc": "设置",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-video-info-videolist-table-alarmhistory",
+                "name": "告警历史",
+                "desc": "告警历史",
+                "authorization": "1",
+                "route": "/company/video/alarmHistory",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-video-info-videolist-table-back",
+                "name": "回放",
+                "desc": "回放",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-video-info-videolist-table-historyimg",
+                "name": "历史图片",
+                "desc": "历史图片",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-video-info-historyalarm",
+            "name": "历史告警",
+            "desc": "历史告警",
+            "authorization": "1",
+            "route": "/company/video/historyAlarm",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-video-info-set",
+            "name": "设置",
+            "desc": "设置图标",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-video-info-pre",
+            "name": "上一个",
+            "desc": "上一个",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-video-info-next",
+            "name": "下一个",
+            "desc": "下一个",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-user-info",
+        "name": "账号信息",
+        "desc": "账号信息",
+        "authorization": "1",
+        "route": "/company/user",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-user-info-new",
+            "name": "新建",
+            "desc": "新建账号",
+            "authorization": "0",
+            "route": "/company/user/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-user-info-del",
+            "name": "删除",
+            "desc": "账号删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-user-info-table-edit",
+            "name": "编辑",
+            "desc": "表格编辑",
+            "authorization": "0",
+            "route": "/company/user/edit",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-user-info-table-active",
+            "name": "激活",
+            "desc": "表格激活",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-user-info-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "1",
+            "route": "/company/user/info",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-user-info-table-del",
+            "name": "删除",
+            "desc": "表格删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "networkcompany-company-maint",
+        "name": "维保信息",
+        "desc": "维保信息",
+        "authorization": "1",
+        "route": "/company/adim",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "networkcompany-company-maint-taskmanage",
+            "name": "维保管理",
+            "desc": "维保管理",
+            "authorization": "1",
+            "route": "/company/adim/client",
+            "type": "button",
+            "children": [
+              {
+                "id": "networkcompany-company-maint-taskmanage-new",
+                "name": "新建任务",
+                "desc": "新建任务",
+                "authorization": "0",
+                "route": "/company/adim_newtask",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-company-maint-taskmanage-table-commit",
+                "name": "评价",
+                "desc": "评价",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-company-maint-taskmanage-table-maintenancedetail",
+                "name": "详情",
+                "desc": "表格维保详情",
+                "authorization": "1",
+                "route": "/company/adim/taskdetail",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "networkcompany-company-maint-taskmanage-table-maintenancedetail-info",
+                    "name": "基本信息",
+                    "desc": "基本信息",
+                    "authorization": "1",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "networkcompany-company-maint-taskmanage-table-maintaindetail",
+                "name": "详情",
+                "desc": "表格维修详情",
+                "authorization": "1",
+                "route": "/company/edit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-company-maint-taskmanage-table-edit",
+                "name": "编辑",
+                "desc": "表格编辑",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "networkcompany-company-maint-taskmanage-table-del",
+                "name": "删除",
+                "desc": "表格删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "networkcompany-company-maint-newreport",
+            "name": "新建报告",
+            "desc": "新建报告",
+            "authorization": "0",
+            "route": "/company/adim_newreport",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-company-maint-table-record",
+            "name": "备案",
+            "desc": "表格备案",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-company-maint-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "networkcompany-company-maint-table-del",
+            "name": "删除",
+            "desc": "表格删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xitongguanli",
+    "name": "系统管理",
+    "desc": "系统管理",
+    "authorization": "1",
+    "route": "/systemmanage",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "xitongguanli-basic",
+        "name": "基本信息管理",
+        "desc": "基本信息管理",
+        "authorization": "1",
+        "route": "/systemmanage/basic",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "xitongguanli-basic-edit",
+            "name": "编辑",
+            "desc": "编辑",
+            "authorization": "1",
+            "route": "/systemmanage/basic/edit",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "xitongguanli-account",
+        "name": "账号管理",
+        "desc": "账号管理",
+        "authorization": "1",
+        "route": "/systemmanage/account",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "xitongguanli-account-new",
+            "name": "新建",
+            "desc": "新建",
+            "authorization": "1",
+            "route": "/systemmanage/account/account_user",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "xitongguanli-account-alarm",
+            "name": "人员分警",
+            "desc": "人员分警",
+            "authorization": "1",
+            "route": "/systemmanage/account/alarm",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "xitongguanli-account-del",
+            "name": "删除",
+            "desc": "删除",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "xitongguanli-account-table-edit",
+            "name": "编辑",
+            "desc": "表格编辑",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "xitongguanli-account-table-active",
+            "name": "激活停用",
+            "desc": "表格激活停用",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "xitongguanli-account-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "1",
+            "route": "/systemmanage/account/account_info",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "xitongguanli-account-table-del",
+            "name": "删除",
+            "desc": "表格删除图标",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "xitongguanli-log",
+        "name": "操作日志",
+        "desc": "操作日志",
+        "authorization": "0",
+        "route": "/systemmanage/log",
+        "type": "header-nav",
+        "children": []
+      },
+      {
+        "id": "xitongguanli-setup",
+        "name": "系统设置",
+        "desc": "系统设置",
+        "authorization": "0",
+        "route": "/systemmanage/setup",
+        "type": "header-nav",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "video",
+    "name": "视频监控",
+    "desc": "视频监控",
+    "authorization": "1",
+    "route": "/video",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "video-content",
+        "name": "视频监控",
+        "desc": "视频监控",
+        "authorization": "1",
+        "route": "/video",
+        "type": "content",
+        "children": [
+          {
+            "id": "video-companylist",
+            "name": "单位列表",
+            "desc": "单位列表",
+            "authorization": "1",
+            "route": "/video/companyList",
+            "type": "button",
+            "children": [
+              {
+                "id": "video-companylist-table-videolist",
+                "name": "视频列表",
+                "desc": "视频列表",
+                "authorization": "1",
+                "route": "/video/videoList",
+                "type": "button",
+                "children": [
+                  {
+                    "id": "video-companylist-table-videolist-table-set",
+                    "name": "设置",
+                    "desc": "设置",
+                    "authorization": "1",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "video-companylist-table-videolist-table-alarmhistory",
+                    "name": "告警历史",
+                    "desc": "告警历史",
+                    "authorization": "1",
+                    "route": "/company/video/alarmHistory",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "video-companylist-table-videolist-table-back",
+                    "name": "回放",
+                    "desc": "回放",
+                    "authorization": "1",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  },
+                  {
+                    "id": "video-companylist-table-videolist-table-historyimg",
+                    "name": "历史图片",
+                    "desc": "历史图片",
+                    "authorization": "1",
+                    "route": "",
+                    "type": "button",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "video-historyalarm",
+            "name": "历史告警",
+            "desc": "历史告警",
+            "authorization": "1",
+            "route": "/video/alarmHistory",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "video-historyalarm-pre",
+            "name": "上一个",
+            "desc": "上一个",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "video-historyalarm-next",
+            "name": "下一个",
+            "desc": "下一个",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "video-historyalarm-set",
+            "name": "设置",
+            "desc": "设置图标",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "servicecompany",
+    "name": "维保系统",
+    "desc": "维保系统",
+    "authorization": "0",
+    "route": "/vyborg",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "servicecompany-maintain",
+        "name": "维修任务",
+        "desc": "维修任务",
+        "authorization": "0",
+        "route": "/vyborg/manage",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "servicecompany-maintain-new",
+            "name": "新建维修任务",
+            "desc": "新建维修任务",
+            "authorization": "0",
+            "route": "/vyborg/new",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintain-table-appoint",
+            "name": "指派",
+            "desc": "表格指派",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintain-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "0",
+            "route": "/vyborg/edit",
+            "type": "button",
+            "children": [
+              {
+                "id": "servicecompany-maintain-table-detail-result",
+                "name": "添加任务结果",
+                "desc": "添加任务结果",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "servicecompany-maintain-table-edit",
+            "name": "编辑",
+            "desc": "表格编辑",
+            "authorization": "0",
+            "route": "/vyborg/new",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintain-table-del",
+            "name": "删除",
+            "desc": "表格删除图标",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "servicecompany-maintenance",
+        "name": "维保任务",
+        "desc": "维保任务",
+        "authorization": "0",
+        "route": "/vyborg/task",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "servicecompany-maintenance-newtask",
+            "name": "新增维保任务",
+            "desc": "新增维保任务",
+            "authorization": "0",
+            "route": "/vyborg/tasknew",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintenance-new",
+            "name": "生成维保报告",
+            "desc": "生成维保报告",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintenance-set",
+            "name": "设置",
+            "desc": "表格设置",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintenance-table-appoint",
+            "name": "指派",
+            "desc": "表格指派",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintenance-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "0",
+            "route": "/vyborg/taskdetail",
+            "type": "button",
+            "children": [
+              {
+                "id": "servicecompany-maintenance-table-detail-info",
+                "name": "基本信息",
+                "desc": "基本信息",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-maintenance-table-detail-table-edit",
+                "name": "编辑",
+                "desc": "详情中表格编辑",
+                "authorization": "0",
+                "route": "/vyborg/taskequipedit",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-maintenance-table-detail-submit",
+                "name": "提交按钮",
+                "desc": "提交按钮",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "servicecompany-maintenance-table-edit",
+            "name": "编辑",
+            "desc": "表格编辑",
+            "authorization": "0",
+            "route": "/vyborg/tasknew",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-maintenance-table-del",
+            "name": "删除",
+            "desc": "表格删除图标",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "servicecompany-report",
+        "name": "维保报告",
+        "desc": "维保报告",
+        "authorization": "0",
+        "route": "/vyborg/report",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "servicecompany-report-set",
+            "name": "设置",
+            "desc": "设置",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-report-table-record",
+            "name": "备案",
+            "desc": "备案",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-report-table-detail",
+            "name": "报告详情",
+            "desc": "报告详情",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-report-table-download",
+            "name": "下载报告",
+            "desc": "下载报告",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-report-table-del",
+            "name": "删除",
+            "desc": "删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "servicecompany-contract",
+        "name": "合同管理",
+        "desc": "合同管理",
+        "authorization": "0",
+        "route": "/vyborg/contract",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "servicecompany-contract-new",
+            "name": "新建合同",
+            "desc": "新建合同",
+            "authorization": "0",
+            "route": "/vyborg/contractnew",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-contract-set",
+            "name": "设置",
+            "desc": "设置",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-contract-table-building",
+            "name": "建筑物",
+            "desc": "建筑物",
+            "authorization": "0",
+            "route": "/vyborg/building",
+            "type": "button",
+            "children": [
+              {
+                "id": "servicecompany-contract-table-building-new",
+                "name": "新增建筑物",
+                "desc": "新增建筑物",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-building-import",
+                "name": "批量导入",
+                "desc": "批量导入",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-building-table-set",
+                "name": "设为维保建筑物",
+                "desc": "表格设为维保建筑物",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-building-table-edit",
+                "name": "编辑",
+                "desc": "表格编辑",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-building-table-del",
+                "name": "删除",
+                "desc": "表格删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "servicecompany-contract-table-project",
+            "name": "维保项目",
+            "desc": "表格维保项目",
+            "authorization": "0",
+            "route": "/vyborg/project",
+            "type": "button",
+            "children": [
+              {
+                "id": "servicecompany-contract-table-project-submit",
+                "name": "提交取消",
+                "desc": "表格维保项目提交取消按钮",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "servicecompany-contract-table-planning",
+            "name": "维保计划",
+            "desc": "表格维保计划",
+            "authorization": "0",
+            "route": "/vyborg/plan",
+            "type": "button",
+            "children": [
+              {
+                "id": "servicecompany-contract-table-planning-new",
+                "name": "新增维保计划",
+                "desc": "新增维保计划",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-planning-autonew",
+                "name": "自动生成",
+                "desc": "自动生成",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-planning-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-planning-table-selectequip",
+                "name": "选择设施",
+                "desc": "表格选择设施",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-planning-table-appoint",
+                "name": "指派",
+                "desc": "表格指派",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-planning-table-edit",
+                "name": "编辑",
+                "desc": "表格编辑",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-planning-table-del",
+                "name": "删除",
+                "desc": "表格删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "servicecompany-contract-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "0",
+            "route": "/vyborg/contractdetail",
+            "type": "button",
+            "children": [
+              {
+                "id": "servicecompany-contract-table-detail-attachment-seen",
+                "name": "查看",
+                "desc": "详情中附件查看",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-detail-attachment-download",
+                "name": "下载",
+                "desc": "详情中附件下载",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "servicecompany-contract-table-detail-attachment-del",
+                "name": "删除",
+                "desc": "详情中附件删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "servicecompany-contract-table-edit",
+            "name": "编辑",
+            "desc": "表格编辑",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-contract-table-del",
+            "name": "删除",
+            "desc": "表格删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "servicecompany-charge",
+        "name": "消防主管",
+        "desc": "消防主管",
+        "authorization": "0",
+        "route": "/vyborg/charge",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "servicecompany-charge-curall",
+            "name": "当月应提交报告单位",
+            "desc": "当月应提交报告单位",
+            "authorization": "0",
+            "route": "/vyborg/chargecount",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-curing",
+            "name": "当月已提交报告单位",
+            "desc": "当月已提交报告单位",
+            "authorization": "0",
+            "route": "/vyborg/chargecount",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-curnone",
+            "name": "当月未提交报告单位",
+            "desc": "当月未提交报告单位",
+            "authorization": "0",
+            "route": "/vyborg/chargecount",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-prenone",
+            "name": "上月未提交报告单位",
+            "desc": "上月未提交报告单位",
+            "authorization": "0",
+            "route": "/vyborg/chargecount",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-download",
+            "name": "批量下载",
+            "desc": "主管角色下--批量下载",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-set",
+            "name": "设置",
+            "desc": "主管角色下--设置",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-table-back",
+            "name": "退回",
+            "desc": "表格退回",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "servicecompany-charge-table-download",
+            "name": "下载",
+            "desc": "下载",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alarmdeal",
+    "name": "告警受理",
+    "desc": "告警受理",
+    "authorization": "1",
+    "route": "/alarmdeal",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "alarmdeal-batch-gis",
+        "name": "批量GIS",
+        "desc": "批量GIS",
+        "authorization": "1",
+        "route": "",
+        "type": "button",
+        "children": []
+      },
+      {
+        "id": "alarmdeal-batch-deal",
+        "name": "批量处理",
+        "desc": "批量处理",
+        "authorization": "1",
+        "route": "",
+        "type": "button",
+        "children": []
+      },
+      {
+        "id": "alarmdeal-fire",
+        "name": "火警",
+        "desc": "火警",
+        "authorization": "1",
+        "route": "/alarmdeal/alarmdeal_list/fire",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "alarmdeal-fire-shielded",
+            "name": "查看已屏蔽部件",
+            "desc": "查看已屏蔽部件",
+            "authorization": "1",
+            "route": "/alarmdeal/alarmdeal_shielded/fire",
+            "type": "button",
+            "children": [
+              {
+                "id": "alarmdeal-fire-shielded-deal",
+                "name": "处理",
+                "desc": "头部处理",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fire-alarmdeal_shielded-table-detail",
+                "name": "详情",
+                "desc": "表格详情",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/fire",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fire-alarmdeal_shielded-table-deal",
+                "name": "处理",
+                "desc": "表格处理",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fire-alarmdeal_shielded-table-gis",
+                "name": "gis",
+                "desc": "表格gis",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "alarmdeal-fire-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "1",
+            "route": "/alarmdeal/detailsinfo/fire",
+            "type": "button",
+            "children": [
+              {
+                "id": "alarmdeal-fire-table-detail-history",
+                "name": "历史记录",
+                "desc": "详情里的历史记录",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/fire",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fire-table-detail-gis",
+                "name": "GIS",
+                "desc": "详情里的GIS",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/fire",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "alarmdeal-fire-table-gis",
+            "name": "GIS",
+            "desc": "GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-fire-table-deal",
+            "name": "处理",
+            "desc": "处理",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-fire-table-locationMapImg",
+            "name": "定位平面图",
+            "desc": "定位平面图",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "alarmdeal-fault",
+        "name": "故障",
+        "desc": "故障",
+        "authorization": "1",
+        "route": "/alarmdeal/alarmdeal_list/fault",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "alarmdeal-fault-shielded",
+            "name": "查看已屏蔽部件",
+            "desc": "查看已屏蔽部件",
+            "authorization": "1",
+            "route": "/alarmdeal/alarmdeal_shielded/fault",
+            "type": "button",
+            "children": [
+              {
+                "id": "alarmdeal-fault-shielded-deal",
+                "name": "处理",
+                "desc": "头部处理",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fault-alarmdeal_shielded-table-detail",
+                "name": "详情",
+                "desc": "表格详情",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/fault",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fault-alarmdeal_shielded-table-deal",
+                "name": "处理",
+                "desc": "表格处理",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fault-alarmdeal_shielded-table-gis",
+                "name": "gis",
+                "desc": "表格gis",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "alarmdeal-fault-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "1",
+            "route": "/alarmdeal/detailsinfo/fault",
+            "type": "button",
+            "children": [
+              {
+                "id": "alarmdeal-fault-table-detail-history",
+                "name": "历史记录",
+                "desc": "详情里的历史记录",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/fault",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-fault-table-detail-gis",
+                "name": "GIS",
+                "desc": "详情里的GIS",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/fault",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "alarmdeal-fault-table-gis",
+            "name": "GIS",
+            "desc": "GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-fault-table-deal",
+            "name": "处理",
+            "desc": "处理",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-fault-table-locationMapImg",
+            "name": "定位平面图",
+            "desc": "定位平面图",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "alarmdeal-abnormal",
+        "name": "异常",
+        "desc": "异常",
+        "authorization": "1",
+        "route": "/alarmdeal/alarmdeal_list/abnormal",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "alarmdeal-abnormal-shielded",
+            "name": "查看已屏蔽部件",
+            "desc": "查看已屏蔽部件",
+            "authorization": "1",
+            "route": "/alarmdeal/alarmdeal_shielded/abnormal",
+            "type": "button",
+            "children": [
+              {
+                "id": "alarmdeal-abnormal-shielded-deal",
+                "name": "处理",
+                "desc": "头部处理",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-abnormal-alarmdeal_shielded-table-detail",
+                "name": "详情",
+                "desc": "表格详情",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/abnormal",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-abnormal-alarmdeal_shielded-table-deal",
+                "name": "处理",
+                "desc": "表格处理",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-abnormal-alarmdeal_shielded-table-gis",
+                "name": "gis",
+                "desc": "表格gis",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "alarmdeal-abnormal-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "1",
+            "route": "/alarmdeal/detailsinfo/abnormal",
+            "type": "button",
+            "children": [
+              {
+                "id": "alarmdeal-abnormal-table-detail-history",
+                "name": "历史记录",
+                "desc": "详情里的历史记录",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/abnormal",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-abnormal-table-detail-gis",
+                "name": "GIS",
+                "desc": "详情里的GIS",
+                "authorization": "1",
+                "route": "/alarmdeal/detailsinfo/abnormal",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "alarmdeal-abnormal-table-gis",
+            "name": "GIS",
+            "desc": "GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-abnormal-table-deal",
+            "name": "处理",
+            "desc": "处理",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-abnormal-table-locationMapImg",
+            "name": "定位平面图",
+            "desc": "定位平面图",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "alarmdeal-yinhuan",
+        "name": "隐患",
+        "desc": "隐患",
+        "authorization": "1",
+        "route": "/alarmdeal/alarmdeal_list/yinhuan",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "alarmdeal-yinhuan-batch-delete",
+            "name": "批量删除",
+            "desc": "批量删除",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-batch-assign",
+            "name": "批量指派",
+            "desc": "批量指派",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-batch-assignment",
+            "name": "批量分派",
+            "desc": "批量分派",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-batch-gis",
+            "name": "批量GIS",
+            "desc": "批量GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-batch-deal",
+            "name": "批量处理",
+            "desc": "批量处理",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-rejected",
+            "name": "驳回",
+            "desc": "单位驳回",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "1",
+            "route": "/alarmdeal/detailsinfo/yinhuan",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-assign",
+            "name": "指派",
+            "desc": "主管指派",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-assignment",
+            "name": "分派",
+            "desc": "单位分派",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-close",
+            "name": "关闭",
+            "desc": "主管关闭",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-deal",
+            "name": "处理",
+            "desc": "处理",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-gis",
+            "name": "GIS",
+            "desc": "GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-yinhuan-table-delete",
+            "name": "删除",
+            "desc": "删除",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "alarmdeal-firecock",
+        "name": "市政消火栓",
+        "desc": "市政消火栓",
+        "authorization": "0",
+        "route": "/alarmdeal/alarmdeal_list/firecock",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "alarmdeal-firecock-batch-gis",
+            "name": "批量GIS",
+            "desc": "消火栓批量GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-firecock-batch-deal",
+            "name": "批量处理",
+            "desc": "消火栓批量处理",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-firecock-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "0",
+            "route": "/alarmdeal/detailsinfo/firecock",
+            "type": "button",
+            "children": [
+              {
+                "id": "alarmdeal-firecock-table-detail-history",
+                "name": "历史记录",
+                "desc": "详情里的历史记录",
+                "authorization": "0",
+                "route": "/alarmdeal/detailsinfo/firecock",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "alarmdeal-firecock-table-detail-gis",
+                "name": "GIS",
+                "desc": "详情里的GIS",
+                "authorization": "0",
+                "route": "/alarmdeal/detailsinfo/firecock",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "alarmdeal-firecock-table-gis",
+            "name": "GIS",
+            "desc": "GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "alarmdeal-firecock-table-deal",
+            "name": "处理",
+            "desc": "处理",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yinhuanhistory",
+    "name": "隐患历史",
+    "desc": "隐患历史",
+    "authorization": "0",
+    "route": "/danger",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "yinhuanhistory-content",
+        "name": "隐患历史",
+        "desc": "隐患历史",
+        "authorization": "0",
+        "route": "/danger/hidden_danger_list",
+        "type": "content",
+        "children": [
+          {
+            "id": "yinhuanhistory-batch-delete",
+            "name": "批量删除",
+            "desc": "批量删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "yinhuanhistory-batch-gis",
+            "name": "批量GIS",
+            "desc": "批量GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "yinhuanhistory-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "0",
+            "route": "/danger/hidden_danger_list/history_detail",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "yinhuanhistory-table-gis",
+            "name": "GIS",
+            "desc": "GIS",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "yinhuanhistory-table-delete",
+            "name": "删除",
+            "desc": "删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "patrol",
+    "name": "智能巡检",
+    "desc": "智能巡检",
+    "authorization": "0",
+    "route": "/patrol",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "patrol-report",
+        "name": "巡查报告",
+        "desc": "巡查报告",
+        "authorization": "0",
+        "route": "/patrol/patrol_report",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "patrol-report-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-report-table-download",
+            "name": "下载",
+            "desc": "表格下载",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-report-batch-download",
+            "name": "批量下载",
+            "desc": "批量下载",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "patrol-administer",
+        "name": "巡查点管理",
+        "desc": "巡查点管理",
+        "authorization": "0",
+        "route": "/patrol/patrol_administer",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "patrol-administer-add",
+            "name": "新增",
+            "desc": "新增",
+            "authorization": "0",
+            "route": "/patrol/patrol_site_new",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-administer-batch-twoCode",
+            "name": "批量生成二维码",
+            "desc": "批量生成二维码",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-administer-item",
+            "name": "巡查项",
+            "desc": "巡查项",
+            "authorization": "0",
+            "route": "/patrol/patrol_item",
+            "type": "button",
+            "children": [
+              {
+                "id": "patrol-administer-item-add",
+                "name": "新增",
+                "desc": "新增",
+                "authorization": "0",
+                "route": "/patrol/patrol_item_new",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "patrol-administer-item-table-edit",
+                "name": "编辑",
+                "desc": "编辑",
+                "authorization": "0",
+                "route": "/patrol/patrol_item_new",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "patrol-administer-item-table-detail",
+                "name": "详情",
+                "desc": "详情",
+                "authorization": "0",
+                "route": "/patrol/patrol_item_detail",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "patrol-administer-item-table-del",
+                "name": "删除",
+                "desc": "删除",
+                "authorization": "0",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "patrol-administer-table-edit",
+            "name": "编辑",
+            "desc": "编辑",
+            "authorization": "0",
+            "route": "/patrol/patrol_site_new",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-administer-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "0",
+            "route": "/patrol/patrol_site_detail",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-administer-table-history",
+            "name": "巡查历史",
+            "desc": "巡查历史",
+            "authorization": "0",
+            "route": "/patrol/patrol_site_history",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-administer-table-del",
+            "name": "删除",
+            "desc": "删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "patrol-record",
+        "name": "巡查记录",
+        "desc": "巡查记录",
+        "authorization": "0",
+        "route": "/patrol/patrol_record",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "patrol-record-export",
+            "name": "导出",
+            "desc": "导出",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "patrol-record-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "0",
+            "route": "/patrol/patrol_record_detail_list",
+            "type": "button",
+            "children": [
+              {
+                "id": "patrol-record-detail-list-detail",
+                "name": "详情",
+                "desc": "详情",
+                "authorization": "0",
+                "route": "/patrol/patrol_record_site_detail",
+                "type": "button",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "publicfirecock",
+    "name": "市政消火栓",
+    "desc": "市政消火栓",
+    "authorization": "0",
+    "route": "/firecock",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "publicfirecock-presentfirecock",
+        "name": "市政消火栓",
+        "desc": "头部市政消火栓tab",
+        "authorization": "0",
+        "route": "/firecock/present_firecock",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "publicfirecock-presentfirecock-add",
+            "name": "新增",
+            "desc": "新增",
+            "authorization": "0",
+            "route": "/firecock/add_firecock",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-map",
+            "name": "关联位置",
+            "desc": "关联位置",
+            "authorization": "0",
+            "route": "/firecock/map_firecock",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-header-gis",
+            "name": "GIS",
+            "desc": "表头的gis",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-header-del",
+            "name": "删除",
+            "desc": "表头的删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-header-set",
+            "name": "设置",
+            "desc": "设置",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "0",
+            "route": "/firecock/details_firecock",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-table-edit",
+            "name": "编辑",
+            "desc": "编辑",
+            "authorization": "0",
+            "route": "/firecock/add_firecock",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-table-gis",
+            "name": "GIS",
+            "desc": "table中的gis",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-presentfirecock-table-del",
+            "name": "删除",
+            "desc": "table中的删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "publicfirecock-alarmhistory",
+        "name": "报警历史",
+        "desc": "报警历史",
+        "authorization": "0",
+        "route": "/firecock/present_firecock",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "publicfirecock-alarmhistory-header-gis",
+            "name": "gis",
+            "desc": "表头的gis",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-alarmhistory-header-deal",
+            "name": "处理",
+            "desc": "表头的处理",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-alarmhistory-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "0",
+            "route": "/firecock/details_firecock",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-alarmhistory-table-gis",
+            "name": "gis",
+            "desc": "table中的gis",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "publicfirecock-alarmhistory-table-deal",
+            "name": "处理",
+            "desc": "table中的处理",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "thirdsystem",
+    "name": "辖区机构",
+    "desc": "辖区机构",
+    "authorization": "1",
+    "route": "/thirdsystem",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "thirdsystem-regulatory-center",
+        "name": "监管中心",
+        "desc": "监管中心",
+        "authorization": "1",
+        "route": "/thirdsystem/regulatory_center",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "thirdsystem-regulatory-center-binding-request",
+            "name": "发起的绑定申请",
+            "desc": "发起的绑定申请",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-regulatory-center-gis",
+            "name": "gis",
+            "desc": "表头的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-regulatory-center-del",
+            "name": "删除",
+            "desc": "表头的删除按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-regulatory-center-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "1",
+            "route": "/thirdsystem/regulatory_center/detail",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-regulatory-center-table-bindingremove",
+            "name": "解除绑定",
+            "desc": "解除绑定",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-regulatory-center-table-gis",
+            "name": "gis",
+            "desc": "table中的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-regulatory-center-table-del",
+            "name": "删除",
+            "desc": "table中的删除",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-regulatory-center-table-companylist",
+            "name": "单位列表",
+            "desc": "单位列表",
+            "authorization": "1",
+            "route": "/thirdsystem/regulatory_center/companyList",
+            "type": "button",
+            "children": [
+              {
+                "id": "thirdsystem-regulatory-center-companylist-table-detail",
+                "name": "详情",
+                "desc": "详情",
+                "authorization": "1",
+                "route": "/thirdsystem/regulatory_center/companyDetail",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "thirdsystem-regulatory-center-company-list-header-gis",
+                "name": "gis",
+                "desc": "表头的gis",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "thirdsystem-regulatory-center-company-list-table-gis",
+                "name": "gis",
+                "desc": "table中的gis按钮",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "thirdsystem-maint-company",
+        "name": "维保单位",
+        "desc": "维保单位",
+        "authorization": "0",
+        "route": "/thirdsystem/maint_company",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "thirdsystem-maint-company-binding-request",
+            "name": "发起的绑定申请",
+            "desc": "发起的绑定申请",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-maint-company-add",
+            "name": "新增",
+            "desc": "新增",
+            "authorization": "0",
+            "route": "/thirdsystem/maint_company/new",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-maint-company-del",
+            "name": "删除",
+            "desc": "表头删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-maint-company-gis",
+            "name": "gis",
+            "desc": "表头的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-maint-company-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "0",
+            "route": "/thirdsystem/maint_company/detail",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-maint-company-table-bindingremove",
+            "name": "解除绑定",
+            "desc": "解除绑定",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-maint-company-table-gis",
+            "name": "gis",
+            "desc": "table中的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-maint-company-table-companylist",
+            "name": "单位列表",
+            "desc": "table中的单位列表",
+            "authorization": "0",
+            "route": "/thirdsystem/maint_company/companyList",
+            "type": "button",
+            "children": [
+              {
+                "id": "thirdsystem-maint-company-table-companylist-gis",
+                "name": "GIS",
+                "desc": "表头GIS",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "thirdsystem-maint-company-table-companylist-table-detail",
+                "name": "详情",
+                "desc": "table中的详情",
+                "authorization": "0",
+                "route": "/thirdsystem/maint_company/companyDetail",
+                "type": "button",
+                "children": []
+              },
+              {
+                "id": "thirdsystem-maint-company-table-companylist-table-gis",
+                "name": "GIS",
+                "desc": "table中的GIS",
+                "authorization": "1",
+                "route": "",
+                "type": "button",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "thirdsystem-maint-company-table-del",
+            "name": "删除",
+            "desc": "table中的删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "thirdsystem-company",
+        "name": "联网单位",
+        "desc": "联网单位",
+        "authorization": "1",
+        "route": "/thirdsystem/company",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "thirdsystem-company-binding-request",
+            "name": "发起的绑定申请",
+            "desc": "发起的绑定申请",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-importall",
+            "name": "批量导入",
+            "desc": "批量导入",
+            "authorization": "1",
+            "route": "/thirdsystem/import",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-add",
+            "name": "新增",
+            "desc": "表头新增",
+            "authorization": "1",
+            "route": "/thirdsystem/company/new",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-del",
+            "name": "删除",
+            "desc": "表头删除",
+            "authorization": "0",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-gis",
+            "name": "gis",
+            "desc": "表头的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "1",
+            "route": "/thirdsystem/company/detail",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-table-bindingremove",
+            "name": "解除绑定",
+            "desc": "解除绑定",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-table-gis",
+            "name": "gis",
+            "desc": "table中的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-company-table-del",
+            "name": "删除",
+            "desc": "table中的删除",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "thirdsystem-fire-manage",
+        "name": "消防主管单位",
+        "desc": "消防主管单位",
+        "authorization": "1",
+        "route": "/thirdsystem/fire_manage",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "thirdsystem-fire-manage-binding-request",
+            "name": "发起的绑定申请",
+            "desc": "发起的绑定申请",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-fire-manage-gis",
+            "name": "gis",
+            "desc": "表头的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-fire-manage-del",
+            "name": "删除",
+            "desc": "表头的删除",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-fire-manage-table-detail",
+            "name": "详情",
+            "desc": "详情",
+            "authorization": "1",
+            "route": "/thirdsystem/fire_manage/detail",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-fire-manage-table-bindingremove",
+            "name": "解除绑定",
+            "desc": "解除绑定",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-fire-manage-table-gis",
+            "name": "gis",
+            "desc": "table中的gis按钮",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          },
+          {
+            "id": "thirdsystem-fire-manage-table-del",
+            "name": "删除",
+            "desc": "table中的删除",
+            "authorization": "1",
+            "route": "",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "thirdsystem-my-binding-request",
+        "name": "我的绑定申请",
+        "desc": "我的绑定申请",
+        "authorization": "1",
+        "route": "",
+        "type": "button",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "statistics",
+    "name": "统计分析",
+    "desc": "统计分析",
+    "authorization": "1",
+    "route": "/statistic",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "statistics-charts",
+        "name": "图表模式",
+        "desc": "图表模式",
+        "authorization": "1",
+        "route": "/statistic/charts",
+        "type": "header-nav",
+        "children": []
+      },
+      {
+        "id": "statistics-reports",
+        "name": "报表模式",
+        "desc": "报表模式",
+        "authorization": "1",
+        "route": "/statistic/reports",
+        "type": "header-nav",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "resourcemanagement",
+    "name": "资源管理",
+    "desc": "资源管理",
+    "authorization": "0",
+    "route": "/resource",
+    "type": "left-nav",
+    "children": [
+      {
+        "id": "resourcemanagement-user",
+        "name": "用户列表",
+        "desc": "用户列表",
+        "authorization": "0",
+        "route": "/resource/user_list",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "resourcemanagement-user-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "0",
+            "route": "/resource/user_info",
+            "type": "button",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "resourcemanagement-device",
+        "name": "设备列表",
+        "desc": "设备列表",
+        "authorization": "0",
+        "route": "/resource/equip_list",
+        "type": "header-nav",
+        "children": [
+          {
+            "id": "resourcemanagement-device-table-detail",
+            "name": "详情",
+            "desc": "表格详情",
+            "authorization": "0",
+            "route": "/resource/device_info",
+            "type": "button",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "user-center",
+    "name": "用户中心",
+    "desc": "用户中心",
+    "authorization": "1",
+    "route": "/myhome",
+    "type": "button",
+    "children": []
+  }
+]
